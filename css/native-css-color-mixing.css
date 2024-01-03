@@ -1,0 +1,16 @@
+:root {
+  /* ------ Base Colors ----- */
+  --white: rgb(255, 255, 255);
+  --red: rgb(255, 0, 0);
+
+  /* --- Blend Two Colors --- */
+  --red-100: color-mix(
+    in srgb,
+    var(--white) 25%,
+    var(--red) 75%
+  );
+}
+
+.circle {
+  background-color: var(--red-100);
+}
